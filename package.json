@@ -1,5 +1,5 @@
 {
-  "name": "webdev-starter-materialUI",
+  "name": "BSNLDesign",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,10 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "-": "0.0.1",
     "node-gyp": "^7.1.0",
-    "nuxt": "^2.14.4"
+    "nuxt": "^2.14.5",
+    "save": "^2.4.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",

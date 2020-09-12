@@ -3,12 +3,13 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="red" dark fixed app>
-      <v-toolbar-title>Application</v-toolbar-title>
+    <v-app-bar color="black" dark fixed app>
+     <bsnllogo/>
        <!-- Component Example -->
-      <VuetifyLogo/>
+      
+       <tabs/>
     </v-app-bar>
-
+     
     <!-- Body -->
     <v-content light>
       <nuxt /> 
