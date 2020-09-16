@@ -3,11 +3,17 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="black" dark fixed app>
+    <v-app-bar color="white" dark fixed app>
      <bsnllogo/>
        <!-- Component Example -->
       
        <tabs/>
+       <footer/>
+       <v-spacer></v-spacer>
+       <v-btn icon href="/fooRoute" target="_blank">
+  <v-icon>window</v-icon> Link Text
+</v-btn>
+       
     </v-app-bar>
      
     <!-- Body -->

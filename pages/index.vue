@@ -1,7 +1,8 @@
 <template>
   <div>
     <v-content>
-      <car/>           
+      <car/>    
+             
     </v-content>
   </div>
 </template>

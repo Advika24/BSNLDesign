@@ -1,7 +1,7 @@
 <template>
   <v-tabs
     
-    background-color="black"
+    background-color="white"
     dark
   >
     <v-tab>

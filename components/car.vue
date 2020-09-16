@@ -6,7 +6,7 @@
     <v-app-bar color="red" dark fixed app>
       <v-toolbar-title>Application</v-toolbar-title>
        <!-- Component Example -->
-      <VuetifyLogo/>
+      <bsnllogo/>
     </v-app-bar>
 
     <!-- Body -->
