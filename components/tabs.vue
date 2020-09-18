@@ -1,8 +1,9 @@
 <template>
+
   <v-tabs
     
     background-color="white"
-    dark
+    color="blue"
   >
     <v-tab>
       HOME
@@ -19,5 +20,22 @@
     <v-tab>
       CUSTOMIZE YOUR NUMBER
     </v-tab>
+
+<v-row align="end">
+      <v-col offset-md="8">
+       
+    <v-text-field centered="true"
+            hide-details 
+            label="Filled" 
+            placeholder="Search" 
+            filled 
+            rounded 
+            dense 
+            single-line 
+            append-icon="mdi-magnify" class="shrink">
+    </v-text-field>
+     </v-col>
+   </v-row>
   </v-tabs>
+ </v-tabs>
 </template>

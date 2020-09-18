@@ -3,16 +3,13 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="white" dark fixed app>
+    <v-app-bar color="white" light fixed app>
      <bsnllogo/>
        <!-- Component Example -->
       
        <tabs/>
-       <footer/>
        <v-spacer></v-spacer>
-       <v-btn icon href="/fooRoute" target="_blank">
-  <v-icon>window</v-icon> Link Text
-</v-btn>
+       
        
     </v-app-bar>
      
@@ -22,9 +19,34 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <v-footer color="blue" app>
+   
+    
+     <v-row justify="start">
+     <v-col align ="center"  >
+     
+      <v-btn value="recent">
+      <span>HELP</span>
+      </v-btn>
+      <v-btn value="recent">
+      <span>SITEMAP</span>
+      </v-btn>
+      <v-btn value="recent">
+      <span>PREPAID</span>
+      </v-btn>
+      <v-btn value="recent">
+      <span>POSTPAID</span>
+      </v-btn>
+      <v-btn value="recent">
+      <span>FIBER AND WIFI</span>
+      </v-btn>
+      <v-btn value="recent">
+      <span>CUSTOMIZE NUMBER</span>
+      </v-btn>
+
+      </v-col>
+      </v-row>
+    </v-footer> 
 
   </v-app>
 </template>
