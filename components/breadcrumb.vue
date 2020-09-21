@@ -1,11 +1,11 @@
+<!-- breadcrumbs -->
 <template>
     <div>
-     <!-- breadcrumbs -->
+     
      <v-breadcrumbs color="white" light fixed app :items="items"></v-breadcrumbs>
      
     </div>
 </template>
-
 <script>
   export default {
     data: () => ({
@@ -34,4 +34,3 @@
     }),
   }
 </script>
-

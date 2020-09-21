@@ -77,7 +77,6 @@
         { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
         { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
         { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
-        { title: 'macarons', src: 'https://partylicious.net/wp-content/uploads/2020/04/stack-macarons-pink-white-680-3.jpg', flex: 6 },
       ],
     }),
   }

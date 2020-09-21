@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <v-content>
-       <carousel/>
-       
-       <v-form
+  <v-form
     ref="form"
     v-model="valid"
     lazy-validation
@@ -11,35 +7,30 @@
     <v-text-field
       v-model="name"
       :counter="10"
-      colr="white" light fixed app
       :rules="nameRules"
-      label="Enter Mobile Number"
+      label="Name"
       required
     ></v-text-field>
 
     
 
     <v-btn
-       
+      :disabled="!valid"
       color="success"
       class="mr-4"
       @click="validate"
-      
     >
-      SUBMIT
-     
+      Validate
     </v-btn>
 
     
 
     
-    </v-form>
-    </v-content>
-  </div>
+  </v-form>
 </template>
 
 <script>
-export default {
+  export default {
     data: () => ({
       valid: true,
       name: '',
@@ -48,18 +39,18 @@ export default {
         v => (v && v.length <= 10) || 'Name must be less than 10 characters',
       ],
       
-      
     }),
 
     methods: {
       validate () {
         this.$refs.form.validate()
-      
       },
-      
+      reset () {
+        this.$refs.form.reset()
+      },
+      resetValidation () {
+        this.$refs.form.resetValidation()
+      },
     },
   }
 </script>
-
-<style> 
-</style>

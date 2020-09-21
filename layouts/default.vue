@@ -3,52 +3,46 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="white" light fixed app>
-     <bsnllogo/>
-       <!-- Component Example -->
-      
-       <tabs/>
-       <v-spacer></v-spacer>
-       
-       
-    </v-app-bar>
+    <v-app-bar color="white" light fixed app >
+      <bsnllogo/>
+     <search/>
+     <tabs/>
+     <v-spacer></v-spacer>
+    </v-app-bar>  
      
-    <!-- Body -->
-    <v-content light>
-      <nuxt /> 
+   <!-- Body -->
+    <v-content light fixed>
+      
+      <nuxt/> 
     </v-content>
     
     <!-- Footer -->
     <v-footer color="blue" app>
-   
-    
-     <v-row justify="start">
-     <v-col align ="center"  >
+      <v-row justify="start">
+        <v-col align ="center"  >
      
-      <v-btn value="recent">
-      <span>HELP</span>
-      </v-btn>
-      <v-btn value="recent">
-      <span>SITEMAP</span>
-      </v-btn>
-      <v-btn value="recent">
-      <span>PREPAID</span>
-      </v-btn>
-      <v-btn value="recent">
-      <span>POSTPAID</span>
-      </v-btn>
-      <v-btn value="recent">
-      <span>FIBER AND WIFI</span>
-      </v-btn>
-      <v-btn value="recent">
-      <span>CUSTOMIZE NUMBER</span>
-      </v-btn>
-
-      </v-col>
+          <v-btn value="recent">
+            <span>HELP</span>
+          </v-btn>
+          <v-btn value="recent">
+            <span>SITEMAP</span>
+          </v-btn>
+          <v-btn value="recent">
+            <span>PREPAID</span>
+          </v-btn>
+          <v-btn value="recent">
+            <span>POSTPAID</span>
+          </v-btn>
+          <v-btn value="recent">
+            <span>FIBER AND WIFI</span>
+          </v-btn>
+          <v-btn value="recent">
+            <span>CUSTOMIZE NUMBER</span>
+          </v-btn>
+        </v-col>      
       </v-row>
     </v-footer> 
-
-  </v-app>
+  </v-app> 
 </template>
 
 <script>
