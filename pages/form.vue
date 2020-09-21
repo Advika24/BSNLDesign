@@ -1,5 +1,7 @@
 <!-- form -->
 <template>
+<div>
+<breadcrumb/>
   <v-form
     ref="form"
     
@@ -53,8 +55,10 @@
      SUMBIT
     </v-btn>
 
+    <button @click="goToEvents()" class="uk-button uk-button-link">EVENTS</button>
    
   </v-form>
+  </div>
 </template>
 
 <script>
@@ -72,15 +76,14 @@
     }),
 
     methods: {
-      validate () {
-        this.$refs.form.validate()
+      
+        goToEvents: function () {
+        location.href='http://localhost:3000/BSNLDesign/form'
       },
-      reset () {
-        this.$refs.form.reset()
-      },
-      resetValidation () {
-        this.$refs.form.resetValidation()
-      },
-    },
+     
+    
+    }
+
+    
   }
 </script>
