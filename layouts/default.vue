@@ -6,7 +6,7 @@
     <v-app-bar color="white" light fixed app >
       <bsnllogo/>
      <search/>
-     <tabs/>
+     <hamburger/>
      <v-spacer></v-spacer>
     </v-app-bar>  
      
@@ -17,7 +17,8 @@
     </v-content>
     
     <!-- Footer -->
-    <v-footer color="blue" app>
+    <v-footer color="blue" app 
+    class= "white--text">
       <v-row justify="start">
         <v-col align ="center"  >
      
@@ -51,7 +52,7 @@ export default {}
 
 <style> 
   .white--text {
-    border: 1px solid;
+    
   }
 
    #inspire {

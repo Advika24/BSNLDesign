@@ -55,7 +55,6 @@
      SUMBIT
     </v-btn>
 
-    <button @click="goToEvents()" class="uk-button uk-button-link">EVENTS</button>
    
   </v-form>
   </div>
@@ -76,14 +75,14 @@
     }),
 
     methods: {
-      
-        goToEvents: function () {
-        location.href='http://localhost:3000/BSNLDesign/form'
+      validate () {
+        this.$refs.form.validate()
       },
      
-    
+    goToEvents: function () {
+        location.href='http://localhost:3000/BSNLDesign/form'
     }
-
+},
     
   }
 </script>
