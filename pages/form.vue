@@ -2,50 +2,95 @@
 <template>
 <div>
 <breadcrumb/>
+<v-container>
+<h1 style="color:DodgerBlue;"> Postpaid Bill > Details </h1>
   <v-form
     ref="form"
-    
-  >
+   >
+   <v-row>
+   <v-col 
+   cols="12"
+   md="2">
+   <h3 style="color:DodgerBlue;" class="font-weight-regular">Mobile Number:</h3>
+   </v-col> 
     <v-text-field
       v-model="name"
-      :counter="25"
+      :counter="10"
       color="white" light fixed app
       :rules="nameRules"
-      label="Phone Number"
+      solo
+      label="Mobile Number"
       required
     ></v-text-field>
+    </v-row>
 
+ <v-row>
+   <v-col 
+   cols="12"
+   md="2">
+   <h3 style="color:DodgerBlue;" class="font-weight-regular">Account Number:</h3>
+   </v-col> 
     <v-text-field
       v-model="email"
       color="white" light fixed app
       :rules="emailRules"
+      solo
       label="Account Number"
       required
     ></v-text-field>
+  </v-row>
 
+ <h5 style="color:black; text-align:center;" class="font-weight-light"> Please enter email id and contact number to receive payment details </h5>
+
+ <v-row>
+   <v-col 
+   cols="12"
+   md="2">
+   <h3 style="color:DodgerBlue;" class="font-weight-regular">Email Id:</h3>
+   </v-col> 
     <v-text-field
       v-model="email"
       color="white" light fixed app
       :rules="emailRules"
+      solo
       label="Email Id"
       required
     ></v-text-field>
+ </v-row>
 
-    <v-text-field
+ <v-row>
+   <v-col 
+   cols="12"
+   md="2">
+   <h3 style="color:DodgerBlue;" class="font-weight-regular">Contact Number:</h3>
+   </v-col> 
+      <v-text-field
       v-model="email"
       color="white" light fixed app
-      :rules="emailRules"
+      :counter="10"
+      solo
       label="Contact Number"
       required
     ></v-text-field>
+  </v-row>
 
+<v-row 
+     align="center"
+     justify="center">
+<v-col
+
+      cols="12"
+      md="2">
     <v-checkbox
       v-model="checkbox"
-      color="white" light fixed app
+      color="white" light 
       label="Remember Me"
       
     ></v-checkbox>
-
+    </v-col>
+<v-col
+      cols="12"
+      md="2">
     <v-btn
       :disabled="!valid"
       color="success"
@@ -54,9 +99,12 @@
     >
      SUMBIT
     </v-btn>
+    </v-col>
+</v-row>
 
    
   </v-form>
+  </v-container>
   </div>
 </template>
 

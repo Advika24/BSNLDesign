@@ -6,7 +6,7 @@
     <v-app-bar color="white" light fixed app >
       <bsnllogo/>
      <search/>
-     <hamburger/>
+     <tabs/>
      <v-spacer></v-spacer>
     </v-app-bar>  
      
@@ -22,22 +22,22 @@
       <v-row justify="start">
         <v-col align ="center"  >
      
-          <v-btn value="recent">
+          <v-btn value="normal" depressed="false" color="blue">
             <span>HELP</span>
           </v-btn>
-          <v-btn value="recent">
+          <v-btn value="recent"depressed="false" color="blue">
             <span>SITEMAP</span>
           </v-btn>
-          <v-btn value="recent">
+          <v-btn value="recent" depressed="false" color="blue">
             <span>PREPAID</span>
           </v-btn>
-          <v-btn value="recent">
+          <v-btn value="recent" depressed="false" color="blue">
             <span>POSTPAID</span>
           </v-btn>
-          <v-btn value="recent">
+          <v-btn value="recent" depressed="false" color="blue">
             <span>FIBER AND WIFI</span>
           </v-btn>
-          <v-btn value="recent">
+          <v-btn value="recent" depressed="false" color="blue">
             <span>CUSTOMIZE NUMBER</span>
           </v-btn>
         </v-col>      

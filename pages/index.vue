@@ -8,7 +8,15 @@
     v-model="valid"
     lazy-validation
   >
-     <h2 style="color:DodgerBlue;" class="font-weight-medium">Enter Mobile Number:</h2>
+     <h2 style="color:DodgerBlue;" class="font-weight-medium">PAY BILLS/ RECHARGE</h2>
+     <br>
+     <v-row>
+     <v-col 
+       cols="12"
+       md="2">
+       <h3 style="color:DodgerBlue;" class="font-weight-regular">Contact Number:</h3>
+     </v-col>
+     
     <v-text-field
       v-model="name"
       :counter="10"
@@ -19,16 +27,20 @@
       required
     ></v-text-field>
     
+    <v-col 
+     cols="12"
+     md="2">
     <v-btn
       class="text-center rounded-pill d-inline-flex align-center justify-center ma-3"
-      height="64"
+      height="45"
       width="128"
       color="red"
       @click="validate"
       >
       SUBMIT
-     
     </v-btn>
+    </v-col>
+    </v-row>
     </v-form>
     </v-container>
     </v-content>

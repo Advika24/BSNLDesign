@@ -51,10 +51,12 @@
         tab: null
         ,
         items: [
-          { tab: 'PREPAID', button: 'Recharge', button1:'Prepaid to Postpaid',button2:'Roaming',button3: 'International Roaming', button4:'Upgrade',button5:'View Plans ' },
-          { tab: 'POSTPAID', button: 'Pay Bills', button1:'Roaming',button2:'International Roaming', button3: 'View Plans' },
-          { tab: 'FIBER & WIFI', button: 'Why Bharat Fiber?', button1:'Check Locality',button2:'View Plans' },
-          { tab: 'CUSTOMIZE NUMBER', button: 'Vanity Numbers', button1:'Fancy Numbers',button2:'Choose your Mobile Number (CYMN)'},
+            { tab: 'HOME'}, 
+          { tab: 'SITEMAP'  },
+          { tab: 'PREPAID'  },
+          { tab: 'POSTPAID'},
+          { tab: 'FIBER & WIFI' },
+          { tab: 'CUSTOMIZE NUMBER'},
           
         ],
       }
