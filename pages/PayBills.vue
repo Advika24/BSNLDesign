@@ -2,8 +2,8 @@
 <template>
 <div>
 <breadcrumb/>
-<v-container>
-<h1 style="color:DodgerBlue;"> Postpaid Bill > Details </h1>
+<v-container class="pa-xs-6 ma-xs-6">
+<h1 style="color:#0161B0;"> Postpaid Bill > Details </h1>
   <v-form
     ref="form"
    >
@@ -11,7 +11,7 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:DodgerBlue;" class="font-weight-regular">Mobile Number:</h3>
+   <h3 style="color:#0161B0;" class="font-weight-regular">Mobile Number:</h3>
    </v-col> 
     <v-text-field
       v-model="name"
@@ -28,12 +28,11 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:DodgerBlue;" class="font-weight-regular">Account Number:</h3>
+   <h3 style="color:#0161B0;" class="font-weight-regular">Account Number:</h3>
    </v-col> 
     <v-text-field
       v-model="email"
       color="white" light fixed app
-      :rules="emailRules"
       solo
       label="Account Number"
       required
@@ -46,7 +45,7 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:DodgerBlue;" class="font-weight-regular">Email Id:</h3>
+   <h3 style="color:#0161B0;" class="font-weight-regular">Email Id:</h3>
    </v-col> 
     <v-text-field
       v-model="email"
@@ -62,12 +61,13 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:DodgerBlue;" class="font-weight-regular">Contact Number:</h3>
+   <h3 style="color:#0161B0;" class="font-weight-regular">Contact Number:</h3>
    </v-col> 
       <v-text-field
       v-model="email"
       color="white" light fixed app
       :counter="10"
+      :rules="nameRules"
       solo
       label="Contact Number"
       required
@@ -83,7 +83,7 @@
       md="2">
     <v-checkbox
       v-model="checkbox"
-      color="white" light 
+      color="#0161B0" light 
       label="Remember Me"
       
     ></v-checkbox>
@@ -116,7 +116,9 @@
       nameRules: [
         v => !!v || 'Please enter valid details',
         ],
-      
+      emailRules: [
+        v => !!v || 'Please enter valid details',
+        ],
       
       
       checkbox: false,
@@ -128,7 +130,7 @@
       },
      
     goToEvents: function () {
-        location.href='http://localhost:3000/BSNLDesign/form'
+        location.href='http://localhost:3000/BSNLDesign/PayBills'
     }
 },
     

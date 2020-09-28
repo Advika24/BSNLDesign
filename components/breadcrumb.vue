@@ -2,7 +2,7 @@
 <template>
     <div>
      
-     <v-breadcrumbs color="white" light fixed app :items="items"></v-breadcrumbs>
+     <v-breadcrumbs color="#0161B0" light fixed app :items="items"></v-breadcrumbs>
      
     </div>
 </template>

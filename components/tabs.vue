@@ -1,63 +1,100 @@
 <template>
-    <div >
-      <!-- The purpose was to hide the tabs and change according to what you select. -->
-  
-    <v-tabs
-          v-model="tab"
-      light
-   background-color="white"
-    color="blue"
-    md="4"
-    sm="2"
-    xs="2"
-    >
-      <v-tab 
-        v-for="item in items"
-        :key="item.tab"
-      >
-        {{ item.tab }}
-      </v-tab>
-    </v-tabs>
 
 
-    <v-tabs-items v-model="tab">
-      <v-tab-item 
-        v-for="item in items"
-        :key="item.tab"
-      >
+  <!--Horizontal menu tab is visible only in md and above screens -->
+  <v-row
+     
+  >
 
-      <v-row>
-      <v-app-bar width="1920" dense color="blue"  flat tile>
-        
-        <v-btn text>{{item.button}} </v-btn>
-        <v-btn text>{{item.button1}} </v-btn>
-        <v-btn text>{{item.button2}} </v-btn>
-              
-        <v-btn text>{{item.button3}} </v-btn> 
-        <v-btn text>{{item.button4}} </v-btn>
-        <v-btn text>{{item.button5}} </v-btn>
+ <v-col>
+    <v-menu transition="scroll-y-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          text small
+          color="primary"
+          class=" hidden-sm-and-down" 
+          v-bind="attrs"
+          v-on="on"
+          width="50px" >
+         <h3>HOME </h3>
+        </v-btn>
+      </template>
+    </v-menu>
+  </v-col>
+    
+
+  <v-col>
+    <v-menu transition="scroll-y-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          text small
+          color="primary"
+          class=" hidden-sm-and-down" 
+          v-bind="attrs"
+          v-on="on"
+          width="50px" >
+         <h3>PREPAID </h3>
+        </v-btn>
+      </template>
       
-        </v-app-bar> </v-row>
-      </v-tab-item>
-    </v-tabs-items>
-   
-  </div>
-</template>
+    </v-menu>
+    </v-col>
+    <v-col>
 
-<script>
-  export default {
-    data () {
-      return {
-        tab: null
-        ,
-        items: [
-          { tab: 'PREPAID', button: 'Recharge', button1:'Prepaid to Postpaid',button2:'Roaming',button3: 'International Roaming', button4:'Upgrade',button5:'View Plans ' },
-          { tab: 'POSTPAID', button: 'Pay Bills', button1:'Roaming',button2:'International Roaming', button3: 'View Plans' },
-          { tab: 'FIBER & WIFI', button: 'Why Bharat Fiber?', button1:'Check Locality',button2:'View Plans' },
-          { tab: 'CUSTOMIZE NUMBER', button: 'Vanity Numbers', button1:'Fancy Numbers',button2:'Choose your Mobile Number (CYMN)'},
-          
-        ],
-      }
-    },
-  }
-</script>
+    <v-menu transition="scroll-y-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+        text small
+          color="primary"
+          class=" hidden-sm-and-down"
+          v-bind="attrs"
+          v-on="on"
+           width="50px"
+        >
+          <h3>POSTPAID</h3>
+        </v-btn>
+      </template>
+      
+    </v-menu>
+</v-col>
+<v-col>
+
+    <v-menu transition="scroll-y-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+        text small
+          color="primary"
+          class=" hidden-sm-and-down"
+          v-bind="attrs"
+          v-on="on"
+           width="50px"
+        >
+           <h3>FIBER AND WIFI </h3>
+        </v-btn>
+      </template>
+      
+    </v-menu>
+    </v-col>
+    <v-col>
+
+    <v-menu transition="scroll-y-transition">
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+        text small
+          color="primary"
+          class=" hidden-sm-and-down"
+          v-bind="attrs"
+          v-on="on"
+          width="50px"
+        >
+          <h3>CUSTOMIZE NUMBER </h3>
+        </v-btn>
+      </template>
+      
+    </v-menu>
+    </v-col>
+
+    
+    </v-row>
+  
+</template>
