@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-content>
+    <!-- carousel on the homepage-->
     <carousel/>
        <br>
        <v-divider color="lightgrey"></v-divider>
@@ -9,7 +10,8 @@
           ref="form"
           v-model="valid"
           lazy-validation
-  >
+          >
+<!-- form to fill mobile number to pay bills/ recharge-->          
      <h2 style="color:#0161B0;" class="font-weight-medium pa-sm-2">PAY BILLS/ RECHARGE</h2>
      <br>
      

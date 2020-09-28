@@ -55,22 +55,19 @@
     <div class="mx-4 hidden-sm-and-down"></div>
     </v-row>
 
-    <!--Logo files have two different sizes for small and extra small screens -->
-       <v-row 
-       
-       >
+    <!--Logo  -->
+       <v-row >
        <img src="bsnllogo.png" style="width: 180px; padding-left: 50px ; padding-right: 50px;" class=" pl-ml-16 hidden-xs-only">
        <img src="bsnllogo.png" style="width: 150px; padding-left: 50px ; padding-right: 50px;" class=" pl-ml-16 hidden-sm-and-up">
         </v-row >
+        
        <!-- Component Example -->
         <v-row  justify="start" class="  col-md-7">
        <tabs/>
        </v-row>
 
-       <!--Search bar and other buttons-->
-
-
-      <v-row  justify="end" class="  col-md-2 col-xs-1 col-sm-2">
+       <!--Search bar -->
+       <v-row  justify="end" class="  col-md-2 col-xs-1 col-sm-2">
           <v-text-field centered="true"
             hide-details 
             label="Filled" 
@@ -80,20 +77,19 @@
             dense 
             single-line 
             append-icon="mdi-magnify" class="hidden-xs-only">
-    </v-text-field>
-      </v-row>
+         </v-text-field>
+       </v-row>
 
-          <v-row  justify="end" class="col-md-2 col-xs-1 col-sm-4 hidden-xs-only">
+        <v-row  justify="end" class="col-md-2 col-xs-1 col-sm-4 hidden-xs-only">
           <v-col  justify="end">
-           <v-btn text small color="primary">career</v-btn>
-           <v-btn text small color="primary">corporate</v-btn>
-               </v-col>
-           <v-col>
-           <v-btn text small color="primary">Sign up</v-btn>
-           <v-btn text small color="primary">Log in</v-btn>
-           </v-col>
-           
-           </v-row>
+            <v-btn text small color="primary">career</v-btn>
+            <v-btn text small color="primary">corporate</v-btn>
+          </v-col>
+          <v-col>
+            <v-btn text small color="primary">Sign up</v-btn>
+            <v-btn text small color="primary">Log in</v-btn>
+          </v-col>
+        </v-row>
       
      
     </v-app-bar>
