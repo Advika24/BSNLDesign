@@ -6,7 +6,7 @@
     <!--Header -->
     
      
-       <v-app-bar color="white" light fixed app height="120px">
+       <v-app-bar style="font-family:futura std" color="white" light fixed app height="120px">
          <v-row
     
   >
@@ -25,6 +25,7 @@
           class="hidden-md-and-up"
           justify="start"
           @click.stop="drawer = !drawer"
+          style="font-family:futura std"
           >
           menu
         </v-btn>
@@ -34,11 +35,11 @@
     <v-expansion-panel
     style="background-color:#0161B0;"
     >
-      <v-expansion-panel-header>HOME</v-expansion-panel-header>
-      <v-expansion-panel-header>PREPAID</v-expansion-panel-header>
-      <v-expansion-panel-header>POSTPAID</v-expansion-panel-header>
-      <v-expansion-panel-header>FIBER AND WIFI</v-expansion-panel-header>
-      <v-expansion-panel-header>CUSTOMIZE MOBILE NUMBER</v-expansion-panel-header>
+      <v-expansion-panel-header style="font-family:futura std">HOME</v-expansion-panel-header>
+      <v-expansion-panel-header style="font-family:futura std">PREPAID</v-expansion-panel-header>
+      <v-expansion-panel-header style="font-family:futura std">POSTPAID</v-expansion-panel-header>
+      <v-expansion-panel-header style="font-family:futura std">FIBER AND WIFI</v-expansion-panel-header>
+      <v-expansion-panel-header style="font-family:futura std">CUSTOMIZE MOBILE NUMBER</v-expansion-panel-header>
       
     </v-expansion-panel>
   </v-expansion-panels>
@@ -76,18 +77,20 @@
             rounded 
             dense 
             single-line 
-            append-icon="mdi-magnify" class="hidden-xs-only">
+            append-icon="mdi-magnify" class="hidden-xs-only"
+            style="font-family:futura std">
+            
          </v-text-field>
        </v-row>
 
         <v-row  justify="end" class="col-md-2 col-xs-1 col-sm-4 hidden-xs-only">
           <v-col  justify="end">
-            <v-btn text small color="primary">career</v-btn>
-            <v-btn text small color="primary">corporate</v-btn>
+            <v-btn text small color="primary" style="font-family:futura std" class="mt-6">career</v-btn>
+            <v-btn text small color="primary" style="font-family:futura std" class="mt-6">corporate</v-btn>
           </v-col>
           <v-col>
-            <v-btn text small color="primary">Sign up</v-btn>
-            <v-btn text small color="primary">Log in</v-btn>
+            <v-btn text small color="primary" style="font-family:futura std" class="mt-n12">Sign up</v-btn>
+            <v-btn text small color="primary" style="font-family:futura std" class="mt-n12">Log in</v-btn>
           </v-col>
         </v-row>
       
@@ -124,22 +127,22 @@ export default {
       <v-row justify="start">
         <v-col align ="center" md="12" sm="12" xs="2" >
      
-          <v-btn value="normal" depressed="false" color="#0161B0">
+          <v-btn value="normal" depressed="false" color="#0161B0" style="font-family:futura std">
             <span>HELP</span>
           </v-btn>
-          <v-btn value="recent"depressed="false" color="#0161B0">
+          <v-btn value="recent"depressed="false" color="#0161B0" style="font-family:futura std">
             <span>SITEMAP</span>
           </v-btn>
-          <v-btn value="recent" depressed="false" color="#0161B0">
+          <v-btn value="recent" depressed="false" color="#0161B0" style="font-family:futura std">
             <span>PREPAID</span>
           </v-btn>
-          <v-btn value="recent" depressed="false" color="#0161B0">
+          <v-btn value="recent" depressed="false" color="#0161B0" style="font-family:futura std">
             <span>POSTPAID</span>
           </v-btn>
-          <v-btn value="recent" depressed="false" color="#0161B0">
+          <v-btn value="recent" depressed="false" color="#0161B0" style="font-family:futura std">
             <span>FIBER AND WIFI</span>
           </v-btn>
-          <v-btn value="recent" depressed="false" color="#0161B0">
+          <v-btn value="recent" depressed="false" color="#0161B0" style="font-family:futura std">
             <span>CUSTOMIZE NUMBER</span>
           </v-btn>
         </v-col>      

@@ -2,7 +2,10 @@
 <template>
     <div>
      
-     <v-breadcrumbs color="#0161B0" light fixed app :items="items"></v-breadcrumbs>
+     <v-breadcrumbs color="#0161B0"
+    light fixed app :items="items"
+     style="font-family:futura std">
+     </v-breadcrumbs>
      
     </div>
 </template>
@@ -23,12 +26,12 @@
         {
           text: 'POSTPAID',
           disabled: false,
-          href: 'breadcrumbs_link_2',
+          href: 'http://localhost:3000/BSNLDesign/PayBills',
         },
         {
           text: 'DETAILS',
           disabled: false,
-          href: 'breadcrumbs_link_2',
+          href: 'http://localhost:3000/BSNLDesign/PayBills',
         },
       ],
     }),

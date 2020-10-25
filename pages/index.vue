@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-content>
+    
     <!-- carousel on the homepage-->
     <carousel/>
        <br>
@@ -12,7 +12,7 @@
           lazy-validation
           >
 <!-- form to fill mobile number to pay bills/ recharge-->          
-     <h2 style="color:#0161B0;" class="font-weight-medium pa-sm-2">PAY BILLS/ RECHARGE</h2>
+     <h1 style=" color:#0160B0; font-family:Futura std " class="font-weight-medium pa-sm-2">PAY BILLS/ RECHARGE</h1>
      <br>
      
      <v-row>
@@ -22,7 +22,8 @@
         sm="12" 
         
        >
-       <h3 style="color:#0161B0;" class="font-weight-regular pa-sm-2">Mobile Number:</h3>
+       <h3 style="font-family:Futura std"  class="font-weight-medium pa-sm-2">ENTER NUMBER</h3>
+       
      </v-col>
      
     <v-text-field
@@ -31,6 +32,7 @@
       :counter="10"
       colr="white" light fixed app
       :rules="nameRules"
+      style="font-family:futura std"
       solo
       label="Enter Mobile Number"
       required
@@ -42,12 +44,12 @@
      sm="5"
      xs="2">
     <v-btn
-      class="text-center rounded-pill d-inline-flex align-center justify-center ma-3  pa-sm-6 "
+      class="text-center font-weight-regular shaped-pill d-inline-flex align-center justify-center ma-3  pa-sm-6 "
       height="45"
       width="128"
       color="red"
-      
-      @click="validate"
+      style="font-family:futura std"
+      @click="$router.push('PayBills')"
       >
       SUBMIT
     </v-btn>
@@ -56,7 +58,7 @@
     </v-form>
     </v-container>
     <v-divider color="lightgrey"></v-divider>
-    </v-content>
+    
   </div>
 </template>
 
@@ -66,7 +68,7 @@ export default {
       valid: true,
       name: '',
       nameRules: [
-        v => !!v || 'Phone Number is required',
+        v => !!v || 'Please enter valid contact number',
         v => (v && v.length <= 10) || 'Name must be less than 10 characters',
       ],
      

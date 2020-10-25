@@ -3,7 +3,7 @@
 <div>
 <breadcrumb/>
 <v-container class="pa-xs-6 ma-xs-6">
-<h1 style="color:#0161B0;"> Postpaid Bill > Details </h1>
+<h1 style="color:#0161B0; font-family:futura std"> Postpaid Bill > Details </h1>
   <v-form
     ref="form"
    >
@@ -11,7 +11,7 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:#0161B0;" class="font-weight-regular">Mobile Number:</h3>
+   <h3 style="color:#0161B0; font-family:futura std" class="font-weight-regular">Mobile Number:</h3>
    </v-col> 
     <v-text-field
       v-model="name"
@@ -19,6 +19,7 @@
       color="white" light fixed app
       :rules="nameRules"
       solo
+      style="font-family:futura std"
       label="Mobile Number"
       required
     ></v-text-field>
@@ -28,24 +29,25 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:#0161B0;" class="font-weight-regular">Account Number:</h3>
+   <h3 style="color:#0161B0; font-family:futura std" class="font-weight-regular">Account Number:</h3>
    </v-col> 
     <v-text-field
       v-model="email"
       color="white" light fixed app
       solo
       label="Account Number"
+      style="font-family:futura std"
       required
     ></v-text-field>
   </v-row>
 
- <h5 style="color:black; text-align:center;" class="font-weight-light"> Please enter email id and contact number to receive payment details </h5>
+ <h5 style="color:black; text-align:center; font-family:futura std" class="font-weight-light"> Please enter email id and contact number to receive payment details </h5>
 
  <v-row>
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:#0161B0;" class="font-weight-regular">Email Id:</h3>
+   <h3 style="color:#0161B0; font-family:futura std" class="font-weight-regular">Email Id:</h3>
    </v-col> 
     <v-text-field
       v-model="email"
@@ -53,6 +55,7 @@
       :rules="emailRules"
       solo
       label="Email Id"
+      style="font-family:futura std"
       required
     ></v-text-field>
  </v-row>
@@ -61,7 +64,7 @@
    <v-col 
    cols="12"
    md="2">
-   <h3 style="color:#0161B0;" class="font-weight-regular">Contact Number:</h3>
+   <h3 style="color:#0161B0; font-family:futura std" class="font-weight-regular">Contact Number:</h3>
    </v-col> 
       <v-text-field
       v-model="email"
@@ -69,6 +72,7 @@
       :counter="10"
       :rules="nameRules"
       solo
+      style="font-family:futura std"
       label="Contact Number"
       required
     ></v-text-field>
@@ -84,6 +88,7 @@
     <v-checkbox
       v-model="checkbox"
       color="#0161B0" light 
+      style="font-family:futura std"
       label="Remember Me"
       
     ></v-checkbox>
@@ -95,7 +100,9 @@
       :disabled="!valid"
       color="success"
       class="mr-4"
-      @click="validate"
+      style="font-family:futura std"
+      
+     @click="check; $router.push('confirm')"
     >
      SUMBIT
     </v-btn>
