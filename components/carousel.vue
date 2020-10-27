@@ -22,10 +22,10 @@
             src: 'Carousel02.png',
           },
           {
-            src: 'Carousel.png',
+            src: 'Carousel03.png',
           },
           {
-            src: 'Carousel.png',
+            src: 'Carousel04.png',
           },
         ],
       }
