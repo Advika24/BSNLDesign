@@ -16,16 +16,16 @@
       return {
         items: [
           {
-            src: 'https://i.ibb.co/mynQ8jd/Carousel-01.jpg',
+            src: 'Carousel01.png',
           },
           {
-            src: 'https://i.ibb.co/KyshrdY/Carousel-02.jpg',
+            src: 'Carousel02.png',
           },
           {
-            src: 'https://i.ibb.co/xC7g87T/Carousel-03.jpg',
+            src: 'Carousel.png',
           },
           {
-            src: 'https://i.ibb.co/Ydnjgvx/Carousel-04.jpg',
+            src: 'Carousel.png',
           },
         ],
       }
