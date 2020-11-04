@@ -3,14 +3,13 @@
     
     <!-- carousel on the homepage-->
     <carousel/>
+    
        <br>
+    <!-- divider seperating the carousel and pay bill/recharge form-->
        <v-divider color="lightgrey"></v-divider>
-       <v-container >
-       <v-form
-          ref="form"
-          v-model="valid"
-          lazy-validation
-          >
+       <v-container>
+       
+          
 <!-- form to fill mobile number to pay bills/ recharge-->          
      <h1 style=" color:#0160B0; font-family:Futura std " class="font-weight-medium pa-sm-2">PAY BILLS/ RECHARGE</h1>
      <br>
@@ -22,22 +21,32 @@
         sm="12" 
         
        >
-       <h3 style="font-family:Futura std"  class="font-weight-medium pa-sm-2">ENTER NUMBER</h3>
+       <h3 style="font-family:Futura std; color:black"  class="font-weight-medium pa-sm-2">ENTER NUMBER</h3>
        
      </v-col>
      
-    <v-text-field
-    class="pa-xs-auto pa-sm-6 "
-      v-model="name"
-      :counter="10"
-      colr="white" light fixed app
-      :rules="nameRules"
-      style="font-family:futura std"
-      solo
-      label="Enter Mobile Number"
-      required
-    ></v-text-field>
+     
+    <!-- enter number text field -->
+    <v-col 
+     cols="12"
+     md="8"
+     sm="5"
+     xs="2">
+     <v-text-field
+        class="pa-xs-auto pa-sm-6 "
+        v-model="name"
+        :counter="10"
+        colr="white" light fixed app
+        background-color="#F3F3F3"
+        :rules="nameRules"
+        style="font-family:futura std"
+        solo
+        label="Enter Mobile Number"
+        require>
+      </v-text-field>
+      </v-col>
     
+    <!-- submit button leading to PayBills page-->
     <v-col 
      cols="12"
      md="2"
@@ -55,9 +64,12 @@
     </v-btn>
     </v-col>
     </v-row>
-    </v-form>
+    
     </v-container>
-    <v-divider color="lightgrey"></v-divider>
+
+
+       
+       
     
   </div>
 </template>
@@ -86,4 +98,5 @@ export default {
 </script>
 
 <style> 
+
 </style>

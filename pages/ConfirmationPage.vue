@@ -6,9 +6,10 @@
   
 <!--confirmation box -->
    <br>
-   
+   <v-container>
       <v-row>
-        <v-col  align="center" >
+        <v-col
+          align="center" >
          <v-icon size="150" color="#18B63D"> mdi-checkbox-marked-circle  </v-icon> 
           <h1 style=" color:#0160B0; font-family:Futura std" class="font-weight-heavy">Payment Successful  </h1> 
           <br>
@@ -29,6 +30,6 @@
         </v-col>   
       
       </v-row>
-    
+    </v-container>
  </div>
 </template>
